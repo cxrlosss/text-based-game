@@ -114,9 +114,9 @@ class Game:
                 print("You found a treasure!")
                 self.treasures_found += 1
                 self.current_room.treasure = False
-                if self.treasures_found == 3:
-                    print("You found all the treasures! YOU WIN!")
-                    self.game_over = True
+            if self.treasures_found == 3:
+                print("You found all the treasures! YOU WIN!")
+                self.game_over = True
 
             if self.current_room.potion:
                 print("You found a healing potion! You regain 50 health.")
